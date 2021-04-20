@@ -24,6 +24,11 @@ public class User {
     @Column(name = "nickname")
     private String nickname;
 
+    public User(String email, String nickname) {
+        this.email = email;
+        this.nickname = nickname;
+    }
+
     public int getId() {
         return id;
     }
